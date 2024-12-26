@@ -1,0 +1,20 @@
+/* Your existing styles... */
+
+.skill {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.skill-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: #007bff; /* Change color as needed */
+}
+
+/* Your remaining styles... */
