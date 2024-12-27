@@ -454,3 +454,43 @@ span{
         padding: 1rem;
     }
 }
+/* Navbar styles for mobile responsiveness */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #1f242d;
+        border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none; /* Initially hidden */
+        flex-direction: column; /* Stack links vertically */
+        z-index: 99;
+    }
+    .navbar.active {
+        display: flex; /* Show the navbar when active */
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 1rem 0;
+        text-align: center; /* Center-align links */
+    }
+}
+
+/* Ensure menu icon overlaps other elements */
+#menu-icon {
+    z-index: 100;
+    cursor: pointer;
+}
+
+/* Fix alignment and ensure smooth transitions */
+.navbar {
+    transition: all 0.3s ease;
+}
