@@ -370,9 +370,17 @@ span{
     html {
         font-size: 55%;
     }
+    .skills-container .skills-box,
+    .certificate .grid-box,
+    .project .grid-box {
+        flex: 1 0 45rem;
+    }
+    .contact form .input-box input {
+        width: 100%;
+    }
 }
 
-@media (max-width : 991px) {
+@media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
     }
@@ -382,9 +390,17 @@ span{
     .footer {
         padding: 2rem 3%;
     }
+    .skills-container .skills-box,
+    .certificate .grid-box,
+    .project .grid-box {
+        flex: 1 0 100%;
+    }
 }
 
-@media (max-width : 768px) {
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
     #menu-icon {
         display: block;
     }
@@ -395,19 +411,46 @@ span{
         width: 100%;
         padding: 1rem 3%;
         background: #1f242d;
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .2);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.2);
         display: none;
+        z-index: 99;
     }
-
-    .navbar .active {
+    .navbar.active {
         display: block;
-
     }
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 2rem 0;
     }
+    .skills-container .skills-box,
+    .certificate .grid-box,
+    .project .grid-box {
+        flex: 1 0 100%;
+    }
+}
 
+@media (max-width: 576px) {
+    html {
+        font-size: 45%;
+    }
+    .home-img img {
+        width: 25rem;
+        height: 30rem;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+    .skills-container .skills-box,
+    .certificate .grid-box,
+    .project .grid-box {
+        flex: 1 0 100%;
+    }
+    .contact form {
+        padding: 1rem;
+    }
 }
