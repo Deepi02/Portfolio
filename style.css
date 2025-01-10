@@ -454,7 +454,7 @@ span{
         padding: 1rem;
     }
 }
-/* Navbar styles for mobile responsiveness */
+
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
